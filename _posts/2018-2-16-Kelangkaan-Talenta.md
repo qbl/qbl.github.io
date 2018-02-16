@@ -1,2 +1,4 @@
-# Kelangkaan Talenta
-## dan Bagaimana Menanggulanginya
+---
+layout: post
+title: Kelangkaan Talenta dan Bagaimana Menanggulanginya
+---
