@@ -1,28 +1,32 @@
 ---
 layout: post
 title: Kelangkaan Talenta dan Bagaimana Menanggulanginya
+description: 
+categories:
+ - Opinion
+tags:
+ - Talent Shortage
 ---
 
-Paling tidak dalam beberapa bulan ke belakang, beberapa kali saya menyimak pembahasan mengenai kelangkaan talenta (talent shortage) di industri IT lokal. Mulai dari sesama startup kecil, hingga unicorn dengan valuasi triliunan, hampir semua pelaku industri yang saya kenal secara langsung mengamini bahwa saat ini sulit mencari talenta untuk memenuhi kebutuhan SDM di instansinya masing-masing.
+Belakangan ini, paling tidak beberapa kali saya menyimak pembahasan mengenai kelangkaan talenta (*talent shortage*) di industri IT lokal. Mulai dari sesama pelaku *startup* kecil, hingga petinggi di *unicorn* dengan valuasi triliunan, hampir semua pelaku industri yang saya kenal secara langsung mengamini bahwa saat ini sulit mencari talenta untuk memenuhi kebutuhan SDM di instansinya masing-masing.
 
-Tanpa didukung oleh data, bisa saja cerita-cerita anekdotal yang saya dapati di lingkaran pergaulan ternyata tidak representatif terhadap industri IT secara umum. Atau bisa jadi saya sekadar salah bergaul. Oleh karena itu, dalam persiapan talk saya malam ini, saya mencoba mencari data yang relevan mengenai masalah kelangkaan talenta ini.
+Tanpa dukungan data, bisa saja cerita-cerita anekdotal di lingkaran pergaulan saya tersebut tidak representatif terhadap industri IT secara umum. Bisa jadi saya sekadar salah bergaul. Oleh karena itu, saya kemudian mencari data yang relevan mengenai masalah kelangkaan talenta ini.
 
-Temuan saya, kelangkaan talenta ternyata bukan baru di dunia industri Indonesia. Paling tidak sejak 2013, Persatuan Insinyur Indonesia (PII) mengklaim bahwa Indonesia mengalami kelangkaan talenta sebanyak 30 ribu engineer setiap tahunnya. Kalau kita melihat lingkup yang lebih luas dari sekadar kebutuhan engineer, angkanya lebih fantastis lagi. Menurut Menaker Hanif Dhakiri, Indonesia memiliki 57 juta tenaga kerja terampil pada 2016 lalu. Masih menurut Menteri Hanif, pada 2030 nanti Indonesia membutuhkan 113 juta tenaga kerja terampil. Artinya, setiap tahunnya Indonesia membutuhkan 3,8 juta pekerja terampil.
+Temuan saya, kelangkaan talenta ternyata bukan barang baru di dunia industri Indonesia. Paling tidak sejak 2013, Persatuan Insinyur Indonesia (PII) mengklaim bahwa Indonesia mengalami kelangkaan talenta sebanyak tiga puluh ribu *engineer* setiap tahunnya. Kalau kita melihat lingkup yang lebih luas dari sekadar kebutuhan *engineer*, angkanya lebih fantastis lagi. Menurut Menaker Hanif Dhakiri, Indonesia memiliki 57 juta tenaga kerja terampil pada 2016 lalu. Masih menurut Menteri Hanif, pada 2030 nanti Indonesia membutuhkan 113 juta tenaga kerja terampil. Artinya, setiap tahunnya Indonesia membutuhkan 3,8 juta pekerja terampil.
 
-Ironisnya, menurut sebuah studi dari JP Morgan dan Singapore Management University (SMU)   yang dirilis pada 1 November 2016, tak kurang dari 20% penduduk usia muda (didefinisikan sebagai penduduk dengan usia 15-24 tahun) di Indonesia menganggur. Tingkat pengangguran penduduk usia muda ini merupakan yang terburuk dari lima negara di Asia Tenggara yang diteliti oleh JP Morgan dan SMU. Empat negara lainnya adalah Malaysia, Singapura, Thailand, dan Filipina. Ditambah lagi, menurut sebuah laporan dari Asian Development Bank (ADB), satu dari tiga penduduk berusia muda menganggur selama lebih dari satu tahun.
+Ironisnya, menurut sebuah studi dari JP Morgan dan Singapore Management University (SMU) yang dirilis pada 1 November 2016, tak kurang dari 20% penduduk usia muda (didefinisikan sebagai penduduk dengan usia 15-24 tahun) di Indonesia menganggur. Tingkat pengangguran penduduk usia muda ini merupakan yang terburuk dari lima negara di Asia Tenggara yang diteliti oleh JP Morgan dan SMU. Empat negara lainnya adalah Malaysia, Singapura, Thailand, dan Filipina. Ditambah lagi, menurut sebuah laporan dari Asian Development Bank (ADB), satu dari tiga penduduk berusia muda menganggur selama lebih dari satu tahun.
 
-Jadi, pada demand side, kita memiliki kebutuhan yang besar terhadap tenaga kerja terampil secara umum dan engineer secara khusus. Tapi, pada supply side, kita memiliki tingkat pengangguran yang tinggi di kalangan penduduk usia muda. Ada demand yang besar, ada supply yang juga besar, tapi keduanya entah bagaimana tidak ketemu satu sama lain. Lantas apa yang salah? Dan yang lebih penting lagi, bagaimana kita bisa paling tidak memperbaiki kondisi ini dari kedua sisi?
+Jadi, pada *demand side*, kita memiliki kebutuhan yang besar terhadap tenaga kerja terampil secara umum dan *engineer* secara khusus. Sementara, pada *supply side*, kita memiliki tingkat pengangguran yang tinggi di kalangan penduduk usia muda. Ada *demand* yang besar, ada *supply* yang juga besar, tapi keduanya entah bagaimana tidak ketemu satu sama lain. Lantas apa yang salah? Dan yang lebih penting lagi, bagaimana kita memperbaiki kondisi ini dari kedua sisi?
 
 ***
 
-Sebelum saya mencoba menjawab kedua pertanyaan di atas, tentunya saya perlu menjawab dulu beberapa pertanyaan yang mungkin muncul di benak kawan-kawan semua yang hadir malam ini. Siapa saya sehingga opini saya terhadap topik ini perlu didengar? Apa kredensial saya untuk berbicara tentang topik ini? Dalam bahasa orang di kampung kelahiran saya, "ini orang siapa dah, sotoy beud".
-Saya coba jawab dulu pertanyaan-pertanyaan tadi. Pertama, kawan-kawan sebenarnya tidak harus juga mendengar pemaparan dari saya ini. Hehe. Saya sendiri tidak merasa sebagai expert di bidang HR, pengembangan SDM, atau yang semacam itu. Cuma, karena saya kebetulan pembicara pertama malam ini, apa boleh buat kan ya?
- 
-Hanya saja, dalam beberapa waktu belakangan ini saya mengalami serangkaian proses yang cukup unik yang kemudian membuat saya melihat masalah kelangkaan talenta dari beberapa perspektif yang berbeda. 
+Sebelum menjawab kedua pertanyaan di atas, tentunya saya perlu menjawab dulu beberapa pertanyaan berikut. Siapa saya sehingga opini saya terhadap topik ini perlu didengar? Apa kredensial saya untuk berbicara tentang topik ini?
 
-Sampai Desember 2017 lalu, saya bersama Gio, Tara, dan Raymond masih beraktivitas di sebuah perusahaan IT di mana kami berempat adalah bagian dari co-founders perusahaan. Jika dihitung sejak awal, maka kami sudah menjalani usaha IT selama 8 tahun dengan model bootstrapping. Pada awal Januari lalu, kami berempat bergabung dengan Go-Jek. 
+Menjawab pertanyaan-pertanyaan tadi, saya bukan seorang expert di bidang HR, pengembangan SDM, atau yang semacam itu. Hanya saja, dalam beberapa waktu belakangan ini saya mengalami serangkaian proses yang cukup unik yang memungkinkan saya untuk melihat masalah kelangkaan talenta dari beberapa perspektif yang berbeda.
 
-Selain itu, secara kebetulan, menjelang akhir tahun 2017 lalu kami berempat juga berkesempatan untuk mendesain kurikulum dan mengajar bahasa pemrograman Ruby pada program Go Academy yang dilakukan oleh Go-Jek bekerja sama dengan Kolla Education.
+Sampai Desember 2017 lalu, saya masih beraktivitas di sebuah perusahaan IT di mana saya adalah salah satu dari *co-founders* perusahaan tersebut. Selama delapan tahun sejak 2009, saya menjalani usaha tersebut dengan model *bootstrapping*.
+
+Menjelang akhir tahun 2017 lalu, saya berkesempatan untuk mendesain kurikulum dan mengajar di program Go Scholarship Ruby on Rails yang dilakukan oleh Go-Jek bekerja sama dengan Kolla Education. Program ini merupakan program pelatihan intensif selama tiga bulan yang didesain secara sepsifik agar lulusannya bisa memenuhi kebutuha
 
 Dalam beberapa bulan terakhir, saya mengalami transisi yang cukup unik dalam melihat masalah kelangkaan talenta. Perspektif saya dalam melihat masalah kelangkaan talenta tentunya agak berbeda ketika saya berperan sebagai co-founder dari sebuah startup kecil dibandingkan ketika saya berperan sebagai pembuat kurikulum dan pengajar dari sebuah program yang didesain untuk perusahaan unicorn semacam Go-Jek. Begitu juga, saya menemukan perspektif baru ketika akhirnya saya berperan sebagai seorang engineer di sini.
 

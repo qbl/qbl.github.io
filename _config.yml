@@ -89,7 +89,7 @@ rss:
 #since: 2015
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: pencil
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -232,7 +232,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /default_avatar.png
+avatar: assets/images/default_avatar.png
 
 
 # Table Of Contents in the Sidebar
