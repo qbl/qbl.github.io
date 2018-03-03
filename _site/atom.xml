@@ -1,116 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-17T16:34:44+07:00</updated><id>http://localhost:4000/</id><title type="html">QBLFRB</title><author><name>Iqbal Farabi</name></author><entry><title type="html">Kelangkaan Talenta dan Bagaimana Menanggulanginya</title><link href="http://localhost:4000/opinion/2018/02/16/Kelangkaan-Talenta/" rel="alternate" type="text/html" title="Kelangkaan Talenta dan Bagaimana Menanggulanginya" /><published>2018-02-16T00:00:00+07:00</published><updated>2018-02-16T00:00:00+07:00</updated><id>http://localhost:4000/opinion/2018/02/16/Kelangkaan-Talenta</id><content type="html" xml:base="http://localhost:4000/opinion/2018/02/16/Kelangkaan-Talenta/">&lt;p&gt;Belakangan ini, paling tidak beberapa kali saya menyimak pembahasan mengenai kelangkaan talenta (&lt;em&gt;talent shortage&lt;/em&gt;) di industri IT lokal. Mulai dari sesama pelaku &lt;em&gt;startup&lt;/em&gt; kecil, hingga petinggi di &lt;em&gt;unicorn&lt;/em&gt; dengan valuasi triliunan, hampir semua pelaku industri yang saya kenal secara langsung mengamini bahwa saat ini sulit mencari talenta untuk memenuhi kebutuhan SDM di instansinya masing-masing.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-03T14:11:57+07:00</updated><id>http://localhost:4000/</id><title type="html">QBLFRB</title><author><name>Iqbal Farabi</name></author><entry><title type="html">Yang Fana adalah Waktu, Pragmatisme Abadi</title><link href="http://localhost:4000/books/2018/03/03/Yang-Fana-Adalah-Waktu-Pragmatisme-Abadi/" rel="alternate" type="text/html" title="Yang Fana adalah Waktu, Pragmatisme Abadi" /><published>2018-03-03T00:00:00+07:00</published><updated>2018-03-03T00:00:00+07:00</updated><id>http://localhost:4000/books/2018/03/03/Yang-Fana-Adalah-Waktu-Pragmatisme-Abadi</id><content type="html" xml:base="http://localhost:4000/books/2018/03/03/Yang-Fana-Adalah-Waktu-Pragmatisme-Abadi/">&lt;p&gt;Sekitar sembilan tahun yang lalu, pada tahun 2009, saya, Gio, Tara, dan Raymond (dan juga tiga orang teman lain) bertaruh nasib dan mencoba peruntungan kami dengan merintis usaha IT sendiri. Sisi positif dari merintis usaha sendiri adalah tidak ada yang mengatur apa yang harus kami kerjakan. Sisi negatif dari merintis usaha sendiri adalah tidak ada yang mengatur apa yang harus kami kerjakan. Jadi, di satu sisi, kami bisa memilih mengerjakan apa saja yang kami mau. Tidak ada yang melarang dan tidak ada yang mengharuskan kami untuk mengerjakan apapun. Tapi di sisi lain, tidak ada yang memberitahu apa yang sebaiknya kami kerjakan. Hampir untuk semua hal, kami harus mencari tahu dan menentukan sendiri.&lt;/p&gt;
 
-&lt;p&gt;Tanpa dukungan data, bisa saja cerita-cerita anekdotal di lingkaran pergaulan saya tersebut tidak representatif terhadap industri IT secara umum. Bisa jadi saya sekadar salah bergaul. Oleh karena itu, saya kemudian mencari data yang relevan mengenai masalah kelangkaan talenta ini.&lt;/p&gt;
+&lt;p&gt;Termasuk dalam hal yang harus kami tentukan sendiri adalah teknologi apa yang kami gunakan dalam mengembangkan perangkat lunak untuk proyek-proyek yang kami kerjakan. Atas usulan Gio, kami setuju untuk mempelajari sebuah &lt;em&gt;framework&lt;/em&gt; yang waktu itu masih tergolong sangat “eksotik” di Indoneisa: Ruby on Rails. Kalau sekarang saya menengok ke belakang, rasanya keputusan untuk mempelajari dan menggunakan &lt;em&gt;framework&lt;/em&gt; Ruby on Rails ini merupakan salah satu keputusan yang sangat besar dampaknya terhadap karir profesional saya sejauh ini.&lt;/p&gt;
 
-&lt;p&gt;Temuan saya, kelangkaan talenta ternyata bukan barang baru di dunia industri Indonesia. Paling tidak sejak 2013, Persatuan Insinyur Indonesia (PII) mengklaim bahwa Indonesia mengalami kelangkaan talenta sebanyak tiga puluh ribu &lt;em&gt;engineer&lt;/em&gt; setiap tahunnya. Kalau kita melihat lingkup yang lebih luas dari sekadar kebutuhan &lt;em&gt;engineer&lt;/em&gt;, angkanya lebih fantastis lagi. Menurut Menaker Hanif Dhakiri, Indonesia memiliki 57 juta tenaga kerja terampil pada 2016 lalu. Masih menurut Menteri Hanif, pada 2030 nanti Indonesia membutuhkan 113 juta tenaga kerja terampil. Artinya, setiap tahunnya Indonesia membutuhkan 3,8 juta pekerja terampil.&lt;/p&gt;
+&lt;p&gt;Ada banyak dampak dari pilihan teknologi kami tadi. Tapi yang relevan dengan tulisan ini adalah kenyataan bahwa kami harus mempelajari Ruby, sebuah bahasa pemrograman yang sama sekali belum pernah diajarkan di bangku kuliah, secara otodidak tanpa bimbingan senior, dosen, mentor, maupun supervisor. Untungnya, semasa kuliah, kurikulum mata kuliah &lt;em&gt;programming&lt;/em&gt; di Teknik Informatika ITB lebih menekankan pada konsep-konsep fundamental dari pemrograman tanpa terikat pada implementasi bahasa pemrograman yang spesifik.&lt;/p&gt;
 
-&lt;p&gt;Ironisnya, menurut sebuah studi dari JP Morgan dan Singapore Management University (SMU) yang dirilis pada 1 November 2016, tak kurang dari 20% penduduk usia muda (didefinisikan sebagai penduduk dengan usia 15-24 tahun) di Indonesia menganggur. Tingkat pengangguran penduduk usia muda ini merupakan yang terburuk dari lima negara di Asia Tenggara yang diteliti oleh JP Morgan dan SMU. Empat negara lainnya adalah Malaysia, Singapura, Thailand, dan Filipina. Ditambah lagi, menurut sebuah laporan dari Asian Development Bank (ADB), satu dari tiga penduduk berusia muda menganggur selama lebih dari satu tahun.&lt;/p&gt;
+&lt;p&gt;Dari tiga mata kuliah pemrograman (Algoritma dan Pemrograman, Struktur Data, dan Pemrograman Berorientasi Objek), semua kode yang diajarkan di kelas ditulis dalam sebuah &lt;em&gt;pseudo-language&lt;/em&gt;. Baru ketika praktikum di lab kami mengimplementasikan dengan bahasa pemrograman yang sesungguhnya. Dalam kuliah Pemrograman Berorientasi Objek, misalnya, kami melakukan praktikum dengan bahasa pemrograman C++ pada paruh pertama perkuliahan dan Java pada paruh kedua. Dengan memisahkan mana konsep Object Oriented Programming yang generik dan mana implementasi yang spesifik pada tiap-tiap bahasa pemrograman, saya rasa, kami diajarkan untuk menjadi &lt;em&gt;programmer&lt;/em&gt; yang &lt;em&gt;versatile&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;Jadi, pada &lt;em&gt;demand side&lt;/em&gt;, kita memiliki kebutuhan yang besar terhadap tenaga kerja terampil secara umum dan &lt;em&gt;engineer&lt;/em&gt; secara khusus. Sementara, pada &lt;em&gt;supply side&lt;/em&gt;, kita memiliki tingkat pengangguran yang tinggi di kalangan penduduk usia muda. Ada &lt;em&gt;demand&lt;/em&gt; yang besar, ada &lt;em&gt;supply&lt;/em&gt; yang juga besar, tapi keduanya entah bagaimana tidak ketemu satu sama lain. Lantas apa yang salah? Dan yang lebih penting lagi, bagaimana kita memperbaiki kondisi ini dari kedua sisi?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Sebelum menjawab kedua pertanyaan di atas, tentunya saya perlu menjawab dulu beberapa pertanyaan berikut. Siapa saya sehingga opini saya terhadap topik ini perlu didengar? Apa kredensial saya untuk berbicara tentang topik ini?&lt;/p&gt;
-
-&lt;p&gt;Menjawab pertanyaan-pertanyaan tadi, saya bukan seorang expert di bidang HR, pengembangan SDM, atau yang semacam itu. Hanya saja, dalam beberapa waktu belakangan ini saya mengalami serangkaian proses yang cukup unik yang memungkinkan saya untuk melihat masalah kelangkaan talenta dari beberapa perspektif yang berbeda.&lt;/p&gt;
-
-&lt;p&gt;Sampai Desember 2017 lalu, saya masih beraktivitas di sebuah perusahaan IT di mana saya adalah salah satu dari &lt;em&gt;co-founders&lt;/em&gt; perusahaan tersebut. Selama delapan tahun sejak 2009, saya menjalani usaha tersebut dengan model &lt;em&gt;bootstrapping&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Menjelang akhir tahun 2017 lalu, saya berkesempatan untuk mendesain kurikulum dan mengajar di program Go Scholarship Ruby on Rails yang dilakukan oleh Go-Jek bekerja sama dengan Kolla Education. Program ini merupakan program pelatihan intensif selama tiga bulan yang didesain secara sepsifik agar lulusannya bisa memenuhi kebutuha&lt;/p&gt;
-
-&lt;p&gt;Dalam beberapa bulan terakhir, saya mengalami transisi yang cukup unik dalam melihat masalah kelangkaan talenta. Perspektif saya dalam melihat masalah kelangkaan talenta tentunya agak berbeda ketika saya berperan sebagai co-founder dari sebuah startup kecil dibandingkan ketika saya berperan sebagai pembuat kurikulum dan pengajar dari sebuah program yang didesain untuk perusahaan unicorn semacam Go-Jek. Begitu juga, saya menemukan perspektif baru ketika akhirnya saya berperan sebagai seorang engineer di sini.&lt;/p&gt;
-
-&lt;p&gt;Malam ini saya ingin berbagi perspektif yang saya dapatkan dari ketiga pengalaman tersebut. Harapan saya, ada manfaat yang bisa diambil dari apa-apa yang akan saya sampaikan malam ini. Kalau pun tidak, ya masih ada dua pembicara lagi. Hehe. Oh iya, tentunya kritik dan saran dari kawan-kawan sangat saya harapkan.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Versatility&lt;/em&gt; menjadi atribut yang penting bagi seorang &lt;em&gt;programmer&lt;/em&gt; karena industri yang ia geluti merupakan sebuah industri yang sangat cepat sekali perubahannya. Dari sudut pandang konsumen saja, dalam satu dekade terakhir terjadi perubahan yang signifikan dalam cara kita berkomunikasi di Indonesia. Pada tahun 2007, moda komunikasi yang paling sering kita guanakan barangkali SMS. Sekitar tahun 2009-2012, siapa saja yang tak punya PIN BlackBerry Messenger barangkali bisa menjadi &lt;em&gt;social outcast&lt;/em&gt; di komunitasnya. Akhir 2017 lalu, dengan data dominasi &amp;gt;88% pangsa pasar sistem operasi Android di Indonesia (sumber: &lt;a href=&quot;https://www.statista.com/statistics/262205/market-share-held-by-mobile-operating-systems-in-indonesia/&quot;&gt;Statista&lt;/a&gt;), rasanya tidak keliru kalau saya katakan bahwa mayoritas kita berkomunikasi sehari-hari dengan aplikasi seperti WhatsApp atau Line.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;Kembali ke pertanyaan mengenai kelangkaan talenta tadi, apa sebenarnya yang salah sehingga kita punya demand terhadap engineer yang besar dan belum terpenuhi di satu sisi, sementara kita juga punya jumlah pengangguran usia muda yang besar di sisi lain?&lt;/p&gt;
-
-&lt;p&gt;Baik laporan dari JP Morgan-SMU maupun ADB menyebutkan bahwa adanya gap antara skill yang dimiliki oleh lulusan dari institusi pendidikan dengan skill yang dibutuhkan oleh industri. Dalam pengalaman saya sebagai co-founder sebuah startup kecil, dengan berat hati saya harus mengamini penilaian dari JP Morgan-SMU dan ADB tersebut.&lt;/p&gt;
-
-&lt;p&gt;Sebagai sebuah startup kecil, saya tidak punya kemewahan untuk bisa mensortir CV dan lamaran dari ribuan atau bahkan puluhan ribu kandidat. Mencapai angka ratusan pelamar saja rasanya saya belum pernah mengalami. Dari talent pool yang sedikit ini, sedikit sekali kandidat yang sudah memiliki proficiency dengan stack teknologi yang kami gunakan, Ruby dengan framework Ruby on Rails, yang memang relatif “eksotik”.&lt;/p&gt;
-
-&lt;p&gt;Ketika saya masuk Go-Jek, awalnya saya mengira bahwa perusahaan sebesar Go-Jek tentu tidak mengalami kendala semacam itu. Dengan ribuan atau mungkin puluhan ribu pelamar yang mendaftar ke Go-Jek setiap bulannya, tentu tidak sulit menemukan kandidat yang sudah memiliki proficiency dengan stack teknologi yang digunakan di Go-Jek.&lt;/p&gt;
-
-&lt;p&gt;Kenyataannya, saya sendiri ketika pertama kali mendengar assignment yang diberikan untuk saya di Go-Jek, 80% dari teknologi yang harus saya pelajari untuk menyelesaikan assignment tersebut belum pernah saya gunakan sebelumnya. Dengan latar belakang sebagai seorang Rubyist, saya malah ditugaskan untuk mengembangkan sistem dengan menggunakan bahasa pemrograman Go. Demikian juga, di sini saya melihat cukup banyak engineer yang datang dari latar belakang bahasa pemrograman yang berbeda-beda yang kemudian harus belajar untuk menjadi engineer yang lebih versatile di Go-Jek.&lt;/p&gt;
-
-&lt;p&gt;Salah satu interaksi dengan “petinggi” Go-Jek yang paling berkesan bagi saya adalah ketika saya bertemu dengan Sidu Ponappa. Saat itu saya sedang dalam proses mempersiapkan kurikulum untuk diajarkan di program Go Academy. Saya tanyakan pada Sidu, “engineer seperti apa yang dicari oleh Go-Jek?”&lt;/p&gt;
-
-&lt;p&gt;Di luar dugaan saya, jawaban Sidu kurang lebih sebagai berikut, “what you have to understand before conducting this program is that you are not teaching them to be a Ruby engineer. In Go-Jek, there is no Ruby engineer, nor Go engineer, nor Java engineer, nor any kind of language specific engineer. Here we are all just engineers. Engineers solve problems, we use whatever technology that we deem is best suited to solve them. Therefore, you must teach them the fundamentals of programming so that they can use their knowledge to learn any programming languages that they need to solve their problems”.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Dari perkataan Sidu tadi, kalau boleh saya tafsirkan, untuk kawan-kawan yang barangkali berada di supply side, yang masih mencari-cari pekerjaan di bidang IT engineering, perkuat kembali skill-skill yang fundamental. Apa saja skill-skill yang fundamental tersebut? Bagaimana cara mengembangkannya? Saya tidak yakin kita bisa membahas secara mendalam pada kesempatan ini, tapi ada beberapa pointer yang coba saya berikan pada kawan-kawan:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Fundamental Hard Skill&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Pelajari secara mandiri paling sedikit satu bahasa pemrograman hingga mencapai intermediate proficiency dalam bahasa pemrograman tersebut.&lt;/p&gt;
-
-&lt;p&gt;Sebagai Rubyist, saya sangat merekomendasikan untuk kawan-kawan fresh graduate maupun yang masih pemula di bidang teknologi informasi untuk mempelajari bahasa pemrograman Ruby sebagai “bahasa pengantar”.&lt;/p&gt;
-
-&lt;p&gt;Untuk mempelajari Ruby, kawan-kawan bisa mulai dengan mempelajari sendiri materi-materi yang tersedia secara online. Banyak materi bermutu yang gratis, diantaranya adalah materi-materi berikut:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Code Academy&lt;/li&gt;
-  &lt;li&gt;Ruby Koans&lt;/li&gt;
-  &lt;li&gt;Ruby Monk&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Selain itu, untuk mencapai level intermediate, saya sangat menyarankan kawan-kawan untuk mempelajari, dan yang paling penting, membiasakan diri untuk menerapkan Test Driven Development dan Design Patterns pada kode yang kawan-kawan tulis.&lt;/p&gt;
-
-&lt;p&gt;Ketika saya belum di Go-Jek, saya termasuk yang tidak terlalu “religius” dalam menerapkan TDD dan Design Patterns. Malah barangkali kalau bukan karena dipaksa oleh teman saya Gio, saya tidak pernah mempelajari apa itu TDD dan Design Patterns, apalagi menerapkannya.&lt;/p&gt;
-
-&lt;p&gt;Sementara di sebuah sistem dengan kompleksitas sebesar Go-Jek, sangat mustahil untuk bisa menangani segala kompleksitas yang ada tanpa menerapkan TDD dan Desing Patterns secara “religius”. Tidak mungkin menerapkan konsep CI/CD (continuous integration / continuous deployment) tanpa TDD.&lt;/p&gt;
-
-&lt;p&gt;Untuk mempelajari kedua hal ini, saya sarankan membaca material berikut:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;TDD for Non-Believers&lt;/li&gt;
-  &lt;li&gt;Test Driven Development in Ruby&lt;/li&gt;
-  &lt;li&gt;Everyday Rails Testing with Rails&lt;/li&gt;
-  &lt;li&gt;Refactoring Ruby Edition&lt;/li&gt;
-  &lt;li&gt;Design Patterns in Ruby&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Communication Skill&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Pertama, meski tidak berkaitan langsung dengan hard skill engineering, tapi kemampuan membaca dan memahami learning material dalam bahasa Inggris merupakan sebuah keharusan. Jika memungkinkan, saya sangat menyarankan bagi kawan-kawan yang merasa kemampuan berbahasa Inggris-nya kurang untuk mengusahakan belajar bahasa Inggris dengan medium apapun yang kawan-kawan bisa.&lt;/p&gt;
-
-&lt;p&gt;Kedua, saya sangat menyarankan kawan-kawan untuk membuat blog pribadi dan menulis apa-apa yang kawan-kawan pelajari. Menulis blog dengan topik teknologi akan bermanfaat untuk dua hal. Pertama adalah untuk melatih kawan-kawan mengartikulasikan apa yang ada di pikiran kawan-kawan. Kedua, dengan menulis blog tentang apa yang kawan-kawan pelajari, maka kawan-kawan sedang menerapkan apa yang disebut sebagai “Feynman Method”.&lt;/p&gt;
-
-&lt;p&gt;Feynman Method adalah sebuah metode belajar yang dipopulerkan oleh fisikawan peraih nobel bernama Richard Feynman. Menurut Feynman, cara terbaik untuk belajar adalah dengan mencoba mengajarkan kembali materi yang dipelajari tersebut. Dengan menulis blog, kawan-kawan bisa menulis materi yang dipelajari seolah-olah untuk diajarkan pada siapa saja yang membaca blog tersebut.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Critical Thinking&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Sementara bagi kawan-kawan yang berada di demand side,&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Nurture talents internally&lt;/li&gt;
-  &lt;li&gt;Internship and Academy&lt;/li&gt;
-  &lt;li&gt;Help externally through community&lt;/li&gt;
-  &lt;li&gt;Technical mentorship&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Meet halfway&lt;/p&gt;
-
-&lt;p&gt;With existing condition in our IT landscape, business as usual won’t do to fix the problem of talent shortage. We need to meet halfway. Those who seek for opportunities in IT sector should go the extra miles to force themselves to live up to higher standards in terms of capability and versatility. While those who seek for talents should also go the extra miles to invest their time and resources to nurture local talents.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Grit&lt;/p&gt;
-
-&lt;p&gt;Di luar semua pembahasan saya tadi mengenai kelangkaan talenta tadi, sebenarnya ada satu hal lain yang ingin saya bagikan dengan kawan-kawan semua, baik yang berada di supply side maupun demand side.&lt;/p&gt;
-
-&lt;p&gt;Beberapa waktu lalu, sebagai bagian dari feedback yang diberikan untuk saya sebagai pengajar di program Go Academy, seorang kawan menyarankan saya untuk membaca sebuah buku berjudul Grit. Saya jalankan saran tersebut dan saya merasa menemukan sebuah poin yang sangat baik untuk disirkulasikan dalam diskursus perihal kelangkaan talenta ini. Dalam satu gambar, poin tersebut bisa diwakili oleh gambar berikut:&lt;/p&gt;
-
-&lt;p&gt;Ketika melihat kesuksesan seseorang, seringkali kita memuji talenta orang tersebut, “dia emang jenius”, “dia emang gifted”, “dia emang talented banget sih”. Pemahaman saya terhadap buku Grit, mindset ini berpotensi menjerumuskan kita pada fixed mindset ketimbang growth mindset.&lt;/p&gt;</content><author><name>Iqbal Farabi</name></author><category term="Talent Shortage" /><summary type="html">Belakangan ini, paling tidak beberapa kali saya menyimak pembahasan mengenai kelangkaan talenta (talent shortage) di industri IT lokal. Mulai dari sesama pelaku startup kecil, hingga petinggi di unicorn dengan valuasi triliunan, hampir semua pelaku industri yang saya kenal secara langsung mengamini bahwa saat ini sulit mencari talenta untuk memenuhi kebutuhan SDM di instansinya masing-masing.</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2018/02/16/Hello-World/" rel="alternate" type="text/html" title="Hello World!" /><published>2018-02-16T00:00:00+07:00</published><updated>2018-02-16T00:00:00+07:00</updated><id>http://localhost:4000/2018/02/16/Hello-World</id><content type="html" xml:base="http://localhost:4000/2018/02/16/Hello-World/">&lt;p&gt;Hello World! My name is Iqbal Farabi and I write codes for a living. I will write posts on software engineering topics in this blog. Mainly, I will try to share things I learn from my activities, both in my daily work or in my own time as a hobby. Hopefully this blog is any use for you!&lt;/p&gt;
+&lt;p&gt;Di masa awal saya belajar Ruby dulu, misalnya, ketika mencari referensi baik dari buku maupun sumber lainnya, saya cenderung mencari rujukan yang dipublikasikan tidak lebih dari dua tahun ke belakang. Pasalnya, saat itu Ruby versi 1.9 yang baru dirilis dua tahun sebelumnya pada tahun 2007 memiliki perubahan yang cukup besar dibandingkan dengan versi 1.8 yang dirilis pada tahun 2003. Demikian juga &lt;em&gt;framework&lt;/em&gt; Ruby on Rails versi 3 yang dirilis pada tahun 2010, memiliki perubahan yang cukup besar, termasuk salah satunya kompatibiltas hanya dengan Ruby versi 1.8.7 (yang baru dirilis pada 2008) ke atas.&lt;/p&gt;</content><author><name>Iqbal Farabi</name></author><category term="Book Review" /><category term="The Pragmatic Programmer" /><category term="Software Engineering" /><summary type="html">Sekitar sembilan tahun yang lalu, pada tahun 2009, saya, Gio, Tara, dan Raymond (dan juga tiga orang teman lain) bertaruh nasib dan mencoba peruntungan kami dengan merintis usaha IT sendiri. Sisi positif dari merintis usaha sendiri adalah tidak ada yang mengatur apa yang harus kami kerjakan. Sisi negatif dari merintis usaha sendiri adalah tidak ada yang mengatur apa yang harus kami kerjakan. Jadi, di satu sisi, kami bisa memilih mengerjakan apa saja yang kami mau. Tidak ada yang melarang dan tidak ada yang mengharuskan kami untuk mengerjakan apapun. Tapi di sisi lain, tidak ada yang memberitahu apa yang sebaiknya kami kerjakan. Hampir untuk semua hal, kami harus mencari tahu dan menentukan sendiri.</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2018/02/16/Hello-World/" rel="alternate" type="text/html" title="Hello World!" /><published>2018-02-16T00:00:00+07:00</published><updated>2018-02-16T00:00:00+07:00</updated><id>http://localhost:4000/2018/02/16/Hello-World</id><content type="html" xml:base="http://localhost:4000/2018/02/16/Hello-World/">&lt;p&gt;Hello World! My name is Iqbal Farabi and I write codes for a living. I will write posts on software engineering topics in this blog. Mainly, I will try to share things I learn from my activities, both in my daily work or in my own time as a hobby. Hopefully this blog is any use for you!&lt;/p&gt;
 
 &lt;p&gt;Halo! Perkenalkan, nama saya Iqbal Farabi. Sehari-hari saya bekerja sebagai seorang backend engineer. Blog ini akan berisi tulisan-tulisan yang berhubungan dengan software engineering. Utamanya, saya akan berusaha untuk berbagi hal-hal yang saya pelajari dari aktivitas saya, baik yang bersifat profesional di pekerjaan saya sehari-hari maupun yang bersifat hobi. Harapan saya, semoga blog ini bermanfaat bagi pembacanya.&lt;/p&gt;</content><author><name>Iqbal Farabi</name></author><summary type="html">Hello World! My name is Iqbal Farabi and I write codes for a living. I will write posts on software engineering topics in this blog. Mainly, I will try to share things I learn from my activities, both in my daily work or in my own time as a hobby. Hopefully this blog is any use for you!</summary></entry></feed>

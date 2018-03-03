@@ -162,7 +162,7 @@ blockquote { margin: 0; padding: 0; }
 
 img { display: block; margin: auto; max-width: 100%; height: auto; }
 
-hr { margin: 40px 0; height: 3px; border: none; background-color: #ddd; background-image: repeating-linear-gradient(-45deg, white, white 4px, transparent 4px, transparent 8px); }
+hr { margin-bottom: 20px; height: 3px; width: 10%; border: none; background-color: #ddd; background-image: repeating-linear-gradient(-45deg, white, white 4px, transparent 4px, transparent 8px); }
 
 blockquote { padding: 0 15px; color: #666; border-left: 4px solid #ddd; }
 blockquote cite::before { content: "-"; padding: 0 5px; }
@@ -558,7 +558,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .links-of-author { margin-top: 20px; }
 
 .links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #555; font-size: 13px; }
-.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: cyan; }
+.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #00de0a; }
 
 .links-of-blogroll { font-size: 13px; }
 
