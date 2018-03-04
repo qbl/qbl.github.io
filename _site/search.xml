@@ -16,25 +16,34 @@ Versatility menjadi atribut yang penting bagi seorang programmer karena industri
 
 
 
-Dengan karakter industri IT yang seperti itu, bisa dibayangkan bagaimana sulitnya menulis buku IT yang bisa tetap relevan untuk waktu yang lama. Pada Oktober 1999, David Thomas dan Andrew Hunt berhasil melakukan pekerjaan sulit tersebut dengan buku karya mereka yang berjudul The Pragmatic Programmer. Hampir dua dekade setelah pertama kali dipublikasikan, The Pragmatic Programmer masih terasa sangat relevan bagi saya yang baru pertama kali berhasil khatam membaca buku tersebut pada akhir Februari kemarin.
+Dengan karakter industri IT yang cepat berubah tadi, bisa dibayangkan bagaimana sulitnya menulis buku IT yang bisa tetap relevan untuk waktu yang lama. Pada tahun 1999, David Thomas dan Andrew Hunt berhasil melakukan pekerjaan sulit tersebut dengan buku mereka The Pragmatic Programmer. Hampir dua dekade setelah pertama kali dipublikasikan, The Pragmatic Programmer masih terasa sangat relevan, paling tidak bagi saya yang baru pertama kali berhasil khatam membaca buku tersebut pada akhir Februari kemarin.
 
-Tulisan ini merupakan review saya untuk buku The Pragmatic Programmer. Review ini saya bagi menjadi tiga bagian. Pada bagian pertama, saya akan memaparkan ikhtisar sangat singkat dari buku The Pragmatic Programmer. Pada bagian kedua, saya mencoba berbagi beberapa poin dari The Pragmatic Programmer yang terasa sangat mengena bagi diri saya sendiri. Terakhir, saya juga akan berusaha menebak kenapa The Pragmatic Programmer masih terasa relevan hari ini meski diterbitkan sudah hampir dua puluh tahun yang lalu.
+Tulisan ini merupakan review saya terhadap buku The Pragmatic Programmer. Review ini tidak akan berisi ringkasan yang saya pelajari dari tiap bab buku The Pragmatic Programmer. Ada learning notes yang nanti akan saya tulis terpisah untuk itu. Meskipun demikian, saya tetap merasa perlu untuk memulai review ini dengan memaparkan definisi dan karakteristik seorang pragmatic programmer menurut Thomas dan Hunt.
 
-Tapi sebelum kita mengulas beranjak ke tiga bagian tadi, ada baiknya kita menjawab dulu sebuah pertanyaan penting, “apa sih yang dimaksud dengan programmer yang pragmatis itu?” Dalam mukaddimah The Pragmatic Programmer, Thomas dan Hunt menyebut bahwa kata pragmatis berasal dari bahasa latin “pragmaticus” yang artinya “cakap/terampil dalam bisnis”. Seorang pragmatic programmer, menurut Thomas dan Hunt, bisa dideskripsikan dalam dua frase berikut, get the job done, and do it well.
+Jadi, apa yang dimaksud Thomas dan Hunt dengan pragmatic programmer?” Dalam mukaddimah The Pragmatic Programmer, Thomas dan Hunt menyebut bahwa kata pragmatis berasal dari bahasa latin “pragmaticus” yang artinya “cakap/terampil dalam bisnis”. Seorang pragmatic programmer, menurut Thomas dan Hunt, bisa dideskripsikan dalam dua frase berikut, get the job done, and do it well.
 
-Secara lebih rinci, Thomas dan Hunt menyebutkan bahwa seorang pragmatic programmer umumnya memiliki subset dari beberapa karakteristik berikut:
+Secara lebih rinci, Thomas dan Hunt menyebutkan bahwa seorang pragmatic programmer umumnya memiliki beberapa karakteristik dari lima karakteristik berikut: suka mencoba hal-hal baru (early adopter/fast adopter), penuh rasa ingin tahu (inquisitive), berpikir kritis (critical thinker), realistis (realistic), dan memiliki pengetahuan yang cukup dalam di beberapa bidang (jack of all trades). Di luar karakteristik tadi, ada dua karakteristik lain yang oleh Thomas dan Hunt  dianggap sangat mendasar bagi seorang pragmatic programmer. Kedua karakteristik tersebut adalah seorang pragmatic programmer peduli terhadap keterampilannya (care about your craft) dan sangat memikirkan apa yang dikerjakannya (think about your work).
+
+Keseluruhan buku The Pragmatic Programmer membahas tentang bagaimana cara menjadi seorang pragmatic programmer. Beberapa hal yang ditulis oleh Thomas dan Hunt bersifat umum dan bisa diterapkan di banyak profesi selain programmer. Beberapa lainnya bersifat cukup spesifik. Terlepas dari seberapa umum atau seberapa spesifik, mayoritas poin yang ditulis oleh Thomas dan Hunt rasanya masih applicable untuk diterapkan saat ini.
 
 
-  Early adopter/fast adopter
-Seorang pragmatic programmer biasanya senang mencoba hal-hal baru, cepat memahami hal-hal baru yang dicobanya tersebut, dan bisa mengintegrasikan pengetahuan akan hal-hal baru tersebut dengan pengetahuan yang sudah dimilikinya sebelumnya.
-  Inquisitive
-Seorang pragmatic programmer penuh rasa ingin tahu dan suka bertanya.
-  Critical thinker
-Seorang pragmatic programmer jarang menerima segala sesuatu sebagai hal yang benar sebelum benar-benar mengetahui fakta terkait hal tersebut.
-  Realistic
-Dengan kebiasaannya yang selalu berusaha menggali lebih dalam, seorang pragmatic programmer memiliki pemahaman yang relatif kuat terhadap persoalan yang dihadapinya. Oleh karena itu, seorang pragmatic programmer biasanya akan lebih realistis dalam mengukur seberapa sulit atau seberapa lama waktu yang diperlukan untuk menyelesaikan sebuah pekerjaan.
-  Jack of all trades
-Karena sifatnya sebagai early adopter/fast adopter, maka seorang pragmatic programmer tak jarang memiliki pengetahuan yang cukup luas dan mencakup spektrum teknologi yang cukup beragam.
+
+Salah satu contoh poin yang bersifat umum pada The Pragmatic Progammer adalah sub bab tentang portofolio pengetahuan (knowledge portofolio). Ini adalah bahasan yang paling saya ingat karena menurut saya poin ini merupakan salah satu poin terpenting di buku ini. Thomas dan Hunt memandang seluruh pengetahuan yang dimiliki seorang programmer sebagai sebuah portofolio pengetahuan, layaknya sebuah portofolio finansial pada bidang investasi.
+
+Oleh karena itu, Thomas dan Hunt menyarankan agar setiap programmer mengelola portofolio pengetahuannya layaknya mengelola investasi finansial dengan langkah-langkah sebagai berikut:
+
+
+  Investor yang serius berinvestasi secara reguler, berinvestasi sebagai sebuah habit. 
+Demikian juga, seorang yang serius hendak menjadi pragmatic programmer perlu berinvestasi secara reguler dengan terus mempelajari teknologi baru atau memperdalam pengetahuan pada teknologi yang dikuasainya.
+  Untuk sukses dalam jangka panjang, seorang investor harus melakukan diversifikasi terhadap investasinya.
+Bagi seorang pragmatic programmer, diversifikasi bisa dilakukan dengan mempelajari teknologi yang berbeda dari yang biasa ia gunakan sehari-hari.
+  Investor yang cerdas mengelola resiko dengan mendistribusikan portofolionya secara berimbang antara investasi yang konservatif dengan investasi yang bersifat high-risk namun high-reward.
+Dalam konteks portofolio pengetahuan, ini artinya berusaha mendistribusikan investasi waktu untuk mempelajari teknologi secara berimbang. Ada sebagian waktu yang digunakan untuk mempelajari teknologi yang sudah proven, dan ada sebagian waktu yang digunakan untuk mempelajari teknologi yang masih berada di fase awal pengembangan.
+  Investor yang baik selalu berusaha memaksimalkan profit dengan membeli ketika harga rendah (buy low) dan menjual ketika harga tinggi (sell high).
+Buy low bisa diartikan sebagai berinvestasi pada teknologi yang masih belum banyak digunakan orang. Seorang programmer yang menjadi early adopter pada suatu teknologi tentunya memiliki tingkat proficiency yang lebih tinggi dari kebanyakan orang ketika teknologi tersebut menjadi arus utama.
+  Investor yang baik selalu mengevaluasi portofolionya secara periodik.
+Seorang pragmatic programmer selalu mengevaluasi teknologi mana dari portofolio pengetahuannya yang perlu diperdalam lebih lanjut dan teknologi mana yang sudah menjadi obsolete.
+
 
 </content>
       <categories>
