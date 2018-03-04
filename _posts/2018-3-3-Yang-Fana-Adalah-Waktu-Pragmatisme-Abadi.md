@@ -28,19 +28,19 @@ Tulisan ini merupakan review saya terhadap buku The Pragmatic Programmer. Review
 
 Jadi, apa yang dimaksud Thomas dan Hunt dengan *pragmatic programmer*?" Dalam mukaddimah The Pragmatic Programmer, Thomas dan Hunt menyebut bahwa kata pragmatis berasal dari bahasa latin "*pragmaticus*" yang artinya "cakap/terampil dalam bisnis". Seorang *pragmatic programmer*, menurut Thomas dan Hunt, bisa dideskripsikan dalam dua frase berikut, *get the job done, and do it well*.
 
-Secara lebih rinci, Thomas dan Hunt menyebutkan bahwa seorang *pragmatic programmer* umumnya memiliki beberapa karakteristik dari lima karakteristik berikut: suka mencoba hal-hal baru (*early adopter/fast adopter*), penuh rasa ingin tahu (*inquisitive*), berpikir kritis (*critical thinker*), realistis (*realistic*), dan memiliki pengetahuan yang cukup dalam di beberapa bidang (*jack of all trades*). Di luar karakteristik tadi, ada dua karakteristik lain yang oleh Thomas dan Hunt  dianggap sangat mendasar bagi seorang *pragmatic programmer*. Kedua karakteristik tersebut adalah seorang *pragmatic programmer* peduli terhadap keterampilannya (*care about your craft*) dan sangat memikirkan apa yang dikerjakannya (*think about your work*).
+Secara lebih rinci, Thomas dan Hunt menyebutkan bahwa seorang *pragmatic programmer* umumnya memiliki satu atau lebih karakteristik dari lima karakteristik berikut: suka mencoba hal-hal baru (*early adopter/fast adopter*), penuh rasa ingin tahu (*inquisitive*), berpikir kritis (*critical thinker*), realistis (*realistic*), dan memiliki pengetahuan yang cukup dalam di beberapa bidang (*jack of all trades*). Di luar karakteristik tadi, ada dua karakteristik lain yang oleh Thomas dan Hunt  dianggap sangat mendasar bagi seorang *pragmatic programmer*. Kedua karakteristik tersebut adalah seorang *pragmatic programmer* peduli terhadap keterampilannya (*care about your craft*) dan sangat memikirkan apa yang dikerjakannya (*think about your work*).
 
-Keseluruhan buku The Pragmatic Programmer membahas tentang bagaimana cara menjadi seorang *pragmatic programmer*. Beberapa hal yang ditulis oleh Thomas dan Hunt bersifat umum dan bisa diterapkan di banyak profesi selain *programmer*. Beberapa lainnya bersifat cukup spesifik. Terlepas dari seberapa umum atau seberapa spesifik, mayoritas poin yang ditulis oleh Thomas dan Hunt rasanya masih *applicable* untuk diterapkan saat ini.
+Keseluruhan buku The Pragmatic Programmer membahas tentang bagaimana cara menjadi seorang *pragmatic programmer* versi Thomas dan Hunt. Beberapa hal yang ditulis oleh Thomas dan Hunt bersifat umum dan bisa diterapkan di banyak profesi selain *programmer*. Beberapa lainnya bersifat cukup spesifik. Terlepas dari seberapa umum atau seberapa spesifik, mayoritas poin yang ditulis oleh Thomas dan Hunt rasanya masih *applicable* untuk diterapkan saat ini.
 
 ***
 
 Salah satu contoh poin yang bersifat umum pada The Pragmatic Progammer adalah sub bab tentang portofolio pengetahuan (*knowledge portofolio*). Ini adalah bahasan yang paling saya ingat karena menurut saya poin ini merupakan salah satu poin terpenting di buku ini. Thomas dan Hunt memandang seluruh pengetahuan yang dimiliki seorang *programmer* sebagai sebuah portofolio pengetahuan, layaknya sebuah portofolio finansial pada bidang investasi.
 
-Oleh karena itu, Thomas dan Hunt menyarankan agar setiap *programmer* mengelola portofolio pengetahuannya layaknya mengelola investasi finansial dengan langkah-langkah sebagai berikut:
+Oleh karena itu, Thomas dan Hunt menyarankan agar setiap *programmer* mengelola portofolio pengetahuannya layaknya mengelola portofolio investasi finansial dengan langkah-langkah sebagai berikut:
 
-1. Investor yang serius **berinvestasi secara reguler**, berinvestasi sebagai sebuah ***habit***.   
-   Demikian juga, seorang yang serius hendak menjadi *pragmatic programmer* perlu berinvestasi secara reguler dengan terus mempelajari teknologi baru atau memperdalam pengetahuan pada teknologi yang dikuasainya.
-2. Untuk sukses dalam jangka panjang, seorang investor harus melakukan **diversifikasi** terhadap investasinya.  
+1. Investor yang serius, **berinvestasi secara reguler**.   
+   Demikian juga, seorang yang serius hendak menjadi *pragmatic programmer* perlu berinvestasi secara reguler dengan terus menerus mempelajari teknologi baru atau memperdalam pengetahuan pada teknologi yang dikuasainya.
+2. Untuk mencapai sukses jangka panjang, seorang investor harus melakukan **diversifikasi** terhadap investasinya.  
    Bagi seorang *pragmatic programmer*, diversifikasi bisa dilakukan dengan mempelajari teknologi yang berbeda dari yang biasa ia gunakan sehari-hari.
 3. Investor yang cerdas **mengelola resiko** dengan mendistribusikan portofolionya secara berimbang antara investasi yang konservatif dengan investasi yang bersifat *high-risk* namun *high-reward*.  
    Dalam konteks portofolio pengetahuan, ini artinya berusaha mendistribusikan investasi waktu untuk mempelajari teknologi secara berimbang. Ada sebagian waktu yang digunakan untuk mempelajari teknologi yang sudah proven, dan ada sebagian waktu yang digunakan untuk mempelajari teknologi yang masih berada di fase awal pengembangan.
@@ -48,13 +48,4 @@ Oleh karena itu, Thomas dan Hunt menyarankan agar setiap *programmer* mengelola 
    *Buy low* bisa diartikan sebagai berinvestasi pada teknologi yang masih belum banyak digunakan orang. Seorang *programmer* yang menjadi *early adopter* pada suatu teknologi tentunya memiliki tingkat *proficiency* yang lebih tinggi dari kebanyakan orang ketika teknologi tersebut menjadi arus utama. 
 5. Investor yang baik selalu **mengevaluasi** portofolionya secara periodik.  
    Seorang *pragmatic programmer* selalu mengevaluasi teknologi mana dari portofolio pengetahuannya yang perlu diperdalam lebih lanjut dan teknologi mana yang sudah menjadi *obsolete*.
-
-
-
-
-
-
-
-
-
 
