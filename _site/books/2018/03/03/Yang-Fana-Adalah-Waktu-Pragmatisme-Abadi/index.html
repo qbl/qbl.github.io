@@ -153,6 +153,8 @@
 
 
 
+<link href="/assets/css/syntax.css" rel="stylesheet" >
+
 
   <title>Yang Fana adalah Waktu, Pragmatisme Abadi | QBLFRB</title>
   
@@ -432,9 +434,9 @@
 
 <hr />
 
-<p>Ada cukup banyak poin bahasan di The Pragmatic Programmer yang bersifat umum. Salah satunya adalah sub bab tentang portofolio pengetahuan (<em>knowledge portofolio</em>). Thomas dan Hunt memandang seluruh pengetahuan yang dimiliki seorang <em>programmer</em> sebagai sebuah portofolio pengetahuan. Oleh karena itu, Thomas dan Hunt menyarankan agar setiap <em>programmer</em> mengelola portofolio pengetahuannya layaknya seorang investor mengelola portofolio investasi finansialnya.</p>
+<p>Ada cukup banyak poin bahasan di The Pragmatic Programmer yang bersifat umum. Salah satunya adalah sub bab tentang portofolio pengetahuan (<em>knowledge portofolio</em>). Poin ini merupakan salah satu poin yang menurut saya paling penting pada buku The Pragmatic Programmer.</p>
 
-<p>Berikut adalah hal-hal yang dilakukan oleh seorang investor profesional yang menurut Thomas dan Hunt juga harus dilakukan oleh seorang <em>pragmatic programmer</em>:</p>
+<p>Thomas dan Hunt memandang seluruh pengetahuan yang dimiliki seorang <em>programmer</em> sebagai sebuah portofolio pengetahuan. Oleh karena itu, Thomas dan Hunt menyarankan agar setiap <em>programmer</em> mengelola portofolio pengetahuannya layaknya seorang investor mengelola portofolio investasi finansialnya. Berikut adalah hal-hal yang dilakukan oleh seorang investor profesional yang menurut Thomas dan Hunt juga harus dilakukan oleh seorang <em>pragmatic programmer</em>:</p>
 
 <ol>
   <li><strong>Berinvestasi secara reguler</strong><br />
@@ -449,110 +451,9 @@ Investor yang baik selalu berusaha memaksimalkan profit dengan membeli ketika ha
 Investor yang baik selalu <strong>mengevaluasi</strong> portofolionya secara periodik. Seorang <em>pragmatic programmer</em> selalu mengevaluasi teknologi mana dari portofolio pengetahuannya yang perlu diperdalam lebih lanjut dan teknologi mana yang sudah menjadi <em>obsolete</em>.</li>
 </ol>
 
-<p>Ada juga poin-poin di buku The Pragmatic Programmer yang tidak terlalu generik di satu sisi, tapi juga tidak terlalu spesifik di sisi lain. Misalnya poin tentang The DRY Principle. DRY pada The DRY Principle merupakan singkatan dari <em>Don’t Repeat Yourself</em>. Secara verbatim, The DRY Principle berbunyi, “setiap bagian dari pengetahuan harus memiliki satu representasi yang autoritatif dan tidak ambigu”. Dalam contoh yang sangat sederhana, implementasi prinsip DRY bisa dilihat pada potongan kode di bawah ini. Pada kode di bawah, prinsip DRY diterapkan dengan membungkus blok kode yang ditulis berulang sebagai sebuah komponen yang mudah untuk digunakan kembali.</p>
+<p>Ada juga poin-poin di buku The Pragmatic Programmer yang tidak terlalu generik di satu sisi, tapi juga tidak terlalu spesifik di sisi lain. Misalnya poin tentang The DRY Principle. DRY pada The DRY Principle merupakan singkatan dari <em>Don’t Repeat Yourself</em>. Kalau boleh saya terjemahkan, The DRY Principle kurang lebih berbunyi, “setiap bagian dari pengetahuan harus memiliki satu representasi yang autoritatif dan tidak ambigu”. Dalam bahasa yang lebih sederhana, setiap potongan pengetahuan (misalnya <em>source code</em> atau dokumentasi <em>source code</em>) yang digunakan berulang kali di berbagai tempat, harus didefiniskan sekali saja dalam bentuk</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># Alih-alih menulis dua view seperti berikut:
-
-# View 1: new.html.erb
-
-&lt;h1&gt;New post&lt;/h1&gt;
-
-&lt;% form_for(@post) do |f| %&gt;
-  &lt;%= f.error_messages %&gt;
-
-  &lt;p&gt;
-    &lt;%= f.label :name %&gt;&lt;br /&gt;
-    &lt;%= f.text_field :name %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.label :title, "title" %&gt;&lt;br /&gt;
-    &lt;%= f.text_field :title %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.label :content %&gt;&lt;br /&gt;
-    &lt;%= f.text_area :content %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.submit "Save" %&gt;
-  &lt;/p&gt;
-&lt;% end %&gt;
-
-&lt;%= link_to 'Back', posts_path %&gt;
-
-# View 2: edit.html.erb
-
-&lt;h1&gt;Editing post&lt;/h1&gt;
-
-&lt;% form_for(@post) do |f| %&gt;
-  &lt;%= f.error_messages %&gt;
-
-  &lt;p&gt;
-    &lt;%= f.label :name %&gt;&lt;br /&gt;
-    &lt;%= f.text_field :name %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.label :title, "title" %&gt;&lt;br /&gt;
-    &lt;%= f.text_field :title %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.label :content %&gt;&lt;br /&gt;
-    &lt;%= f.text_area :content %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.submit "Save" %&gt;
-  &lt;/p&gt;
-&lt;% end %&gt;
-
-&lt;%= link_to 'Show', @post %&gt; |
-&lt;%= link_to 'Back', posts_path %&gt;
-
-# Rails membuat partial view 
-# dengan memindahkan blok kode form_for yang berulang
-# menjadi sebuah template yang reusable sebagai berikut:
-
-# View 1: new.html.erb
-
-&lt;h1&gt;New post&lt;/h1&gt;
-
-&lt;%= render :partial =&gt; "form" %&gt;
-
-&lt;%= link_to 'Back', posts_path %&gt;
-
-# View 2: edit.html.erb
-
-&lt;h1&gt;Editing post&lt;/h1&gt;
-
-&lt;%= render :partial =&gt; "form" %&gt;
-
-&lt;%= link_to 'Show', @post %&gt; |
-&lt;%= link_to 'Back', posts_path %&gt;
-
-# Partial: _form.html.erb
-
-&lt;% form_for(@post) do |f| %&gt;
-  &lt;%= f.error_messages %&gt;
-
-  &lt;p&gt;
-    &lt;%= f.label :name %&gt;&lt;br /&gt;
-    &lt;%= f.text_field :name %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.label :title, "title" %&gt;&lt;br /&gt;
-    &lt;%= f.text_field :title %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.label :content %&gt;&lt;br /&gt;
-    &lt;%= f.text_area :content %&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;%= f.submit "Save" %&gt;
-  &lt;/p&gt;
-&lt;% end %&gt;
-
-</code></pre>
-</div>
-
-<p>Meski prinsip DRY merupakan sebuah poin yang cukup spesifik, implementasi prinsip ini di berbagai teknologi dan bahasa pemrograman bisa berbeda-beda. Pada <em>framework</em> Ruby on Rails, misalnya, prinsip ini diimplementasikan dalam berbagai bentuk di seluruh <em>layer</em> Ruby on Rails, mulai dari <em><a href="https://richonrails.com/articles/rails-4-code-concerns-in-active-record-models">models</a></em>, <em><a href="http://orthogonal.io/articles/drying-up-rails-controllers-polymorphic-and-super-controllers/">controllers</a></em>, hingga <em><a href="http://guides.rubyonrails.org/v2.3/getting_started.html#using-partials-to-eliminate-view-duplication">views</a></em>. Sementara di spektrum lain, pada bidang DevOps, prinsip DRY merupakan salah satu prinsip utama dari pendekatan <em>declarative code</em> yang digunakan oleh beberapa <em>tools infrastructure as code</em> (IAC) seperti Terraform, CloudFormation, SaltStack, dan Puppet.</p>
+<p>Meski prinsip DRY merupakan sebuah poin yang cukup spesifik, implementasi prinsip ini di berbagai teknologi dan bahasa pemrograman bisa berbeda-beda. Pada bahasa Ruby, misalnya, prinsip DRY salah satunya diimplementasikan dengan membuat <em>setter</em> dan <em>getter</em> menjadi <em>method</em> yang bisa dihasilkan secara otomatis dengan menggunakan <code class="highlighter-rouge">attr_accessor</code>. Pada bidang DevOps, misal yang lain, prinsip DRY merupakan salah satu prinsip utama dari pendekatan <em>declarative code</em> yang digunakan oleh beberapa teknologi <em>infrastructure as code</em> (IAC) seperti Terraform, CloudFormation, SaltStack, dan Puppet.</p>
 
 
       

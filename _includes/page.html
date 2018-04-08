@@ -1,5 +1,7 @@
 <div id="posts" class="posts-expand">
-{% include _partials/page-header.html %}
+  {% unless page.type == "learning-notes" %}
+    {% include _partials/page-header.html %}
+  {% endunless %}
   {% comment %} tagcloud page support {% endcomment %}
   {% if page.type == "tags" %}
     <div class="tag-cloud">
@@ -40,6 +42,7 @@
       </div>
     </div>
   {% else %}
-    {{ content }}
+    {% assign post = page %}
+    {% include _macro/page.html %}
   {% endif %}
 </div>

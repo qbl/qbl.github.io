@@ -34,9 +34,9 @@ Keseluruhan bab pada buku The Pragmatic Programmer membahas tentang bagaimana ca
 
 ***
 
-Ada cukup banyak poin bahasan di The Pragmatic Programmer yang bersifat umum. Salah satunya adalah sub bab tentang portofolio pengetahuan (*knowledge portofolio*). Thomas dan Hunt memandang seluruh pengetahuan yang dimiliki seorang *programmer* sebagai sebuah portofolio pengetahuan. Oleh karena itu, Thomas dan Hunt menyarankan agar setiap *programmer* mengelola portofolio pengetahuannya layaknya seorang investor mengelola portofolio investasi finansialnya.
+Ada cukup banyak poin bahasan di The Pragmatic Programmer yang bersifat umum. Salah satunya adalah sub bab tentang portofolio pengetahuan (*knowledge portofolio*). Poin ini merupakan salah satu poin yang menurut saya paling penting pada buku The Pragmatic Programmer. 
 
-Berikut adalah hal-hal yang dilakukan oleh seorang investor profesional yang menurut Thomas dan Hunt juga harus dilakukan oleh seorang *pragmatic programmer*:
+Thomas dan Hunt memandang seluruh pengetahuan yang dimiliki seorang *programmer* sebagai sebuah portofolio pengetahuan. Oleh karena itu, Thomas dan Hunt menyarankan agar setiap *programmer* mengelola portofolio pengetahuannya layaknya seorang investor mengelola portofolio investasi finansialnya. Berikut adalah hal-hal yang dilakukan oleh seorang investor profesional yang menurut Thomas dan Hunt juga harus dilakukan oleh seorang *pragmatic programmer*:
 
 1. **Berinvestasi secara reguler**  
    Seorang invesor yang serius, berinvestasi secara reguler. Demikian juga, seorang yang serius hendak menjadi *pragmatic programmer* perlu berinvestasi mempelajari teknologi secara reguler, baik mempelajari teknologi baru atau memperdalam pengetahuan pada teknologi yang sudah dikuasainya.
@@ -49,108 +49,7 @@ Berikut adalah hal-hal yang dilakukan oleh seorang investor profesional yang men
 5. **Evaluasi**  
    Investor yang baik selalu **mengevaluasi** portofolionya secara periodik. Seorang *pragmatic programmer* selalu mengevaluasi teknologi mana dari portofolio pengetahuannya yang perlu diperdalam lebih lanjut dan teknologi mana yang sudah menjadi *obsolete*.
 
-Ada juga poin-poin di buku The Pragmatic Programmer yang tidak terlalu generik di satu sisi, tapi juga tidak terlalu spesifik di sisi lain. Misalnya poin tentang The DRY Principle. DRY pada The DRY Principle merupakan singkatan dari *Don't Repeat Yourself*. Secara verbatim, The DRY Principle berbunyi, "setiap bagian dari pengetahuan harus memiliki satu representasi yang autoritatif dan tidak ambigu". Dalam contoh yang sangat sederhana, implementasi prinsip DRY bisa dilihat pada potongan kode di bawah ini. Pada kode di bawah, prinsip DRY diterapkan dengan membungkus blok kode yang ditulis berulang sebagai sebuah komponen yang mudah untuk digunakan kembali.
+Ada juga poin-poin di buku The Pragmatic Programmer yang tidak terlalu generik di satu sisi, tapi juga tidak terlalu spesifik di sisi lain. Misalnya poin tentang The DRY Principle. DRY pada The DRY Principle merupakan singkatan dari *Don't Repeat Yourself*. Kalau boleh saya terjemahkan, The DRY Principle kurang lebih berbunyi, "setiap bagian dari pengetahuan harus memiliki satu representasi yang autoritatif dan tidak ambigu". Dalam bahasa yang lebih sederhana, setiap potongan pengetahuan (misalnya *source code* atau dokumentasi *source code*) yang digunakan berulang kali di berbagai tempat, harus didefiniskan sekali saja dalam bentuk 
 
-```
-# Alih-alih menulis dua view seperti berikut:
-
-# View 1: new.html.erb
-
-<h1>New post</h1>
-
-<% form_for(@post) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :title, "title" %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit "Save" %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', posts_path %>
-
-# View 2: edit.html.erb
-
-<h1>Editing post</h1>
-
-<% form_for(@post) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :title, "title" %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit "Save" %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
-
-# Rails membuat partial view 
-# dengan memindahkan blok kode form_for yang berulang
-# menjadi sebuah template yang reusable sebagai berikut:
-
-# View 1: new.html.erb
-
-<h1>New post</h1>
-
-<%= render :partial => "form" %>
-
-<%= link_to 'Back', posts_path %>
-
-# View 2: edit.html.erb
-
-<h1>Editing post</h1>
-
-<%= render :partial => "form" %>
-
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
-
-# Partial: _form.html.erb
-
-<% form_for(@post) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :title, "title" %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit "Save" %>
-  </p>
-<% end %>
-
-```
-
-Meski prinsip DRY merupakan sebuah poin yang cukup spesifik, implementasi prinsip ini di berbagai teknologi dan bahasa pemrograman bisa berbeda-beda. Pada *framework* Ruby on Rails, misalnya, prinsip ini diimplementasikan dalam berbagai bentuk di seluruh *layer* Ruby on Rails, mulai dari *[models](https://richonrails.com/articles/rails-4-code-concerns-in-active-record-models)*, *[controllers](http://orthogonal.io/articles/drying-up-rails-controllers-polymorphic-and-super-controllers/)*, hingga *[views](http://guides.rubyonrails.org/v2.3/getting_started.html#using-partials-to-eliminate-view-duplication)*. Sementara di spektrum lain, pada bidang DevOps, prinsip DRY merupakan salah satu prinsip utama dari pendekatan *declarative code* yang digunakan oleh beberapa *tools infrastructure as code* (IAC) seperti Terraform, CloudFormation, SaltStack, dan Puppet.
+Meski prinsip DRY merupakan sebuah poin yang cukup spesifik, implementasi prinsip ini di berbagai teknologi dan bahasa pemrograman bisa berbeda-beda. Pada bahasa Ruby, misalnya, prinsip DRY salah satunya diimplementasikan dengan membuat *setter* dan *getter* menjadi *method* yang bisa dihasilkan secara otomatis dengan menggunakan `attr_accessor`. Pada bidang DevOps, misal yang lain, prinsip DRY merupakan salah satu prinsip utama dari pendekatan *declarative code* yang digunakan oleh beberapa teknologi *infrastructure as code* (IAC) seperti Terraform, CloudFormation, SaltStack, dan Puppet.
 

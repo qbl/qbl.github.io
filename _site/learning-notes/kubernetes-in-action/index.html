@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Ruby, Engineering" />
+  <meta name="keywords" content="Kubernetes,DevOps," />
 
 
 
@@ -111,14 +111,17 @@
 
 
 
-<meta name="keywords" content="Ruby, Engineering">
+<meta name="description" content="**From Monolithic Applications to Microservices** Before discussing Kubernetes, we need to discuss about the increasing popularity of microservice architecture and container technology. Understanding both phenomenon will give us a proper context on why we need a system like Kubernetes. In the decade that I became a student in Informatics Engineering and then started my professional career as a software engineer (2000-2010), most software applications I learned to build or I developed for my enterprise clients were developed with monolithic architecture. Scaling were rarely an issue as most of my projects involved only a handful or at most thousands of users. There are two ways to scale up a software application: vertically (scale up) and horizontally (scale out). To scale up, we just need to add more resources (CPU, RAM, etc) to the machine running our app. As you may guest, there is a low limit on how high we can scale up because there is only limited amount of resources we can add to a single machine. To scale out, we use additional machines to run different copies of the same app. For monolithic applications, scaling out approach may require major change in most monolithic apps. For some parts of a monolithic application, it is even hard or next to impossible to scale out to multiple machines. That is the main reason why companies that operate on huge scale such as Google, Amazon, or Netflix turn into microservices. While the term &quot;microservices&quot; has been around way before them, these companies have put microservice architecture in the spotlight. There are a lot of benefits of microservice architecture. For the purpose of scalability, we will emphasize on two benefits: - components of microservices run as independent processes while all components of monolithic apps run as a single process ![Monolithic vs Microservice]({{ &quot;/assets/images/kubernetes-in-action/monolithic-vs-microservice.png&quot; }}) - components of microservices allow us to develop, deploy, update, and scale each of them individually while components of monolithic apps have to be developed, deployed, updated, and scaled as a one entity ![Monolithic vs Microservice]({{ &quot;/assets/images/kubernetes-in-action/scaling-out-microservice.png&quot; }})">
+<meta name="keywords" content="Kubernetes, DevOps">
 <meta property="og:type" content="website">
-<meta property="og:title" content="QBLFRB">
-<meta property="og:url" content="http://localhost:4000/tags/">
+<meta property="og:title" content="Introducing Kubernetes">
+<meta property="og:url" content="http://localhost:4000/learning-notes/kubernetes-in-action/">
 <meta property="og:site_name" content="QBLFRB">
+<meta property="og:description" content="**From Monolithic Applications to Microservices** Before discussing Kubernetes, we need to discuss about the increasing popularity of microservice architecture and container technology. Understanding both phenomenon will give us a proper context on why we need a system like Kubernetes. In the decade that I became a student in Informatics Engineering and then started my professional career as a software engineer (2000-2010), most software applications I learned to build or I developed for my enterprise clients were developed with monolithic architecture. Scaling were rarely an issue as most of my projects involved only a handful or at most thousands of users. There are two ways to scale up a software application: vertically (scale up) and horizontally (scale out). To scale up, we just need to add more resources (CPU, RAM, etc) to the machine running our app. As you may guest, there is a low limit on how high we can scale up because there is only limited amount of resources we can add to a single machine. To scale out, we use additional machines to run different copies of the same app. For monolithic applications, scaling out approach may require major change in most monolithic apps. For some parts of a monolithic application, it is even hard or next to impossible to scale out to multiple machines. That is the main reason why companies that operate on huge scale such as Google, Amazon, or Netflix turn into microservices. While the term &quot;microservices&quot; has been around way before them, these companies have put microservice architecture in the spotlight. There are a lot of benefits of microservice architecture. For the purpose of scalability, we will emphasize on two benefits: - components of microservices run as independent processes while all components of monolithic apps run as a single process ![Monolithic vs Microservice]({{ &quot;/assets/images/kubernetes-in-action/monolithic-vs-microservice.png&quot; }}) - components of microservices allow us to develop, deploy, update, and scale each of them individually while components of monolithic apps have to be developed, deployed, updated, and scaled as a one entity ![Monolithic vs Microservice]({{ &quot;/assets/images/kubernetes-in-action/scaling-out-microservice.png&quot; }})">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QBLFRB">
+<meta name="twitter:title" content="Introducing Kubernetes">
+<meta name="twitter:description" content="**From Monolithic Applications to Microservices** Before discussing Kubernetes, we need to discuss about the increasing popularity of microservice architecture and container technology. Understanding both phenomenon will give us a proper context on why we need a system like Kubernetes. In the decade that I became a student in Informatics Engineering and then started my professional career as a software engineer (2000-2010), most software applications I learned to build or I developed for my enterprise clients were developed with monolithic architecture. Scaling were rarely an issue as most of my projects involved only a handful or at most thousands of users. There are two ways to scale up a software application: vertically (scale up) and horizontally (scale out). To scale up, we just need to add more resources (CPU, RAM, etc) to the machine running our app. As you may guest, there is a low limit on how high we can scale up because there is only limited amount of resources we can add to a single machine. To scale out, we use additional machines to run different copies of the same app. For monolithic applications, scaling out approach may require major change in most monolithic apps. For some parts of a monolithic application, it is even hard or next to impossible to scale out to multiple machines. That is the main reason why companies that operate on huge scale such as Google, Amazon, or Netflix turn into microservices. While the term &quot;microservices&quot; has been around way before them, these companies have put microservice architecture in the spotlight. There are a lot of benefits of microservice architecture. For the purpose of scalability, we will emphasize on two benefits: - components of microservices run as independent processes while all components of monolithic apps run as a single process ![Monolithic vs Microservice]({{ &quot;/assets/images/kubernetes-in-action/monolithic-vs-microservice.png&quot; }}) - components of microservices allow us to develop, deploy, update, and scale each of them individually while components of monolithic apps have to be developed, deployed, updated, and scaled as a one entity ![Monolithic vs Microservice]({{ &quot;/assets/images/kubernetes-in-action/scaling-out-microservice.png&quot; }})">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -153,7 +156,7 @@
 <link href="/assets/css/syntax.css" rel="stylesheet" >
 
 
-  <title>              Tags | QBLFRB      </title>
+  <title>              Introducing Kubernetes | QBLFRB      </title>
   
 
 
@@ -303,41 +306,168 @@
             
 <div id="posts" class="posts-expand">
   
-    <header class="post-header">
-
-	<h1 class="post-title" itemprop="name headline">
+  
+  
     
-      Tags
     
-  </h1>
 
-
-
-</header>
+  
 
   
   
   
-    <div class="tag-cloud">
-      <div class="tag-cloud-title">
+
+  <article class="post post-type-learning-notes " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/learning-notes/kubernetes-in-action/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Iqbal Farabi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/default_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QBLFRB">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
           
-            3 tags in total
           
-      </div>
-      <div class="tag-cloud-tags">
-        
-        
-        
-        
-        
-        
+            Introducing Kubernetes
+          
+        </h1>
         
 
+        <div class="post-meta">
+          
+            <span class="post-category" >
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Learning%20Notes" itemprop="url" rel="index">
+                    <span itemprop="name">Learning Notes</span>
+                  </a>
+                </span>
 
+                
+                
+                  , 
+                
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Kubernetes%20in%20Action" itemprop="url" rel="index">
+                    <span itemprop="name">Kubernetes in Action</span>
+                  </a>
+                </span>
 
-        <a href="/tag/#/Book%20Review" style="font-size: 12px;color: rgb(204,204,204)">Book Review</a> <a href="/tag/#/The%20Pragmatic%20Programmer" style="font-size: 12px;color: rgb(204,204,204)">The Pragmatic Programmer</a> <a href="/tag/#/Software%20Engineering" style="font-size: 12px;color: rgb(204,204,204)">Software Engineering</a>
-      </div>
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>From Monolithic Applications to Microservices</strong></p>
+
+<p>Before discussing Kubernetes, we need to discuss about the increasing popularity of microservice architecture and container technology. Understanding both phenomenon will give us a proper context on why we need a system like Kubernetes.</p>
+
+<p>In the decade that I became a student in Informatics Engineering and then started my professional career as a software engineer (2000-2010), most software applications I learned to build or I developed for my enterprise clients were developed with monolithic architecture. Scaling were rarely an issue as most of my projects involved only a handful or at most thousands of users.</p>
+
+<p>There are two ways to scale up a software application: vertically (scale up) and horizontally (scale out). To scale up, we just need to add more resources (CPU, RAM, etc) to the machine running our app. As you may guest, there is a low limit on how high we can scale up because there is only limited amount of resources we can add to a single machine. To scale out, we use additional machines to run different copies of the same app.</p>
+
+<p>For monolithic applications, scaling out approach may require major change in most monolithic apps. For some parts of a monolithic application, it is even hard or next to impossible to scale out to multiple machines. That is the main reason why companies that operate on huge scale such as Google, Amazon, or Netflix turn into microservices. While the term “microservices” has been around way before them, these companies have put microservice architecture in the spotlight.</p>
+
+<p>There are a lot of benefits of microservice architecture. For the purpose of scalability, we will emphasize on two benefits:</p>
+<ul>
+  <li>components of microservices run as independent processes while all components of monolithic apps run as a single process</li>
+</ul>
+
+<p><img src="/assets/images/kubernetes-in-action/monolithic-vs-microservice.png" alt="Monolithic vs Microservice" /></p>
+
+<ul>
+  <li>components of microservices allow us to develop, deploy, update, and scale each of them individually while components of monolithic apps have to be developed, deployed, updated, and scaled as a one entity</li>
+</ul>
+
+<p><img src="/assets/images/kubernetes-in-action/scaling-out-microservice.png" alt="Monolithic vs Microservice" /></p>
+
+      
     </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/Kubernetes" rel="tag"># Kubernetes</a>
+          
+            
+            <a href="/tag/#/DevOps" rel="tag"># DevOps</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+
+      
+    </footer>
+  </article>
+
   
 </div>
 
