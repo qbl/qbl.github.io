@@ -1,7 +1,7 @@
 ---
 layout: page
 type: learning-notes
-title: What are Learning Notes?
+title: Learning Notes
 description: 
 categories:
   - Learning Notes
