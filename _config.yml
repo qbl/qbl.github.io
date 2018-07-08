@@ -70,6 +70,7 @@ plugins:
 # - jemoji
  - jekyll-sitemap
  - jekyll-feed
+ - jekyll-analytics
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -702,3 +703,8 @@ images: assets/images
 
 # Theme version
 version: 5.1.1
+
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-121982966-1
+    anonymizeIp: false
