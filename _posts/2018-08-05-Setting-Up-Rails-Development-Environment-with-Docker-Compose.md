@@ -11,7 +11,7 @@ tags:
   - Ruby
 ---
 
-Hi folks! This guide is mostly written for participants of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.
+Hi folks! This guide is mostly written for participants of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup his/her Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.
 
 Since this guide is aimed at students who might be not familiar yet with containers in general, let me explain in a brief what containers are. Containers are a method of operating system virtualization that allow us to run an application and its dependencies in isolation within our actual operating system on our machine (be it a laptop, desktop, or some remote hosted server). Docker is one of container platform tools that we can use to build and manage containers. 
 Lastly, Docker Compose is a tool for defining and running multi-container Docker applications.
