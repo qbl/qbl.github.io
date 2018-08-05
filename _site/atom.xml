@@ -1,4 +1,200 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-09T08:06:06+07:00</updated><id>http://localhost:4000/</id><title type="html">QBLFRB</title><author><name>Iqbal Farabi</name></author><entry><title type="html">Yang Fana adalah Waktu, Pragmatisme Abadi</title><link href="http://localhost:4000/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi/" rel="alternate" type="text/html" title="Yang Fana adalah Waktu, Pragmatisme Abadi" /><published>2018-07-08T00:00:00+07:00</published><updated>2018-07-08T00:00:00+07:00</updated><id>http://localhost:4000/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi</id><content type="html" xml:base="http://localhost:4000/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi/">&lt;p&gt;Sudah sekitar tujuh bulan terakhir saya &lt;em&gt;banting setir&lt;/em&gt;. Setelah delapan tahun lebih menyebut diri sendiri sebagai seorang &lt;em&gt;Ruby programmer&lt;/em&gt;, pada awal Januari tahun ini saya beralih menjadi seorang &lt;em&gt;system engineer&lt;/em&gt;. Salah satu dampak utama dari alih profesi ini, saya harus belajar banyak hal baru. Bagaimana tidak, ketika pertama kali mendapat &lt;em&gt;brief&lt;/em&gt; tentang peran baru saya ini, barangkali sekitar 80% teknologi yang diucapkan pada &lt;em&gt;brief&lt;/em&gt; tersebut belum pernah saya gunakan secara profesional.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-05T10:27:28+07:00</updated><id>http://localhost:4000/</id><title type="html">QBLFRB</title><author><name>Iqbal Farabi</name></author><entry><title type="html">Setting Up Rails Development Environment with Docker Compose</title><link href="http://localhost:4000/tech/2018/08/05/Setting-Up-Rails-Development-Environment-with-Docker-Compose/" rel="alternate" type="text/html" title="Setting Up Rails Development Environment with Docker Compose" /><published>2018-08-05T00:00:00+07:00</published><updated>2018-08-05T00:00:00+07:00</updated><id>http://localhost:4000/tech/2018/08/05/Setting-Up-Rails-Development-Environment-with-Docker-Compose</id><content type="html" xml:base="http://localhost:4000/tech/2018/08/05/Setting-Up-Rails-Development-Environment-with-Docker-Compose/">&lt;p&gt;Hi folks! This guide is mostly written for participatns of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.&lt;/p&gt;
+
+&lt;p&gt;Since this guide is aimed at students who might be not familiar yet with containers in general, let me explain in a brief what containers are. Containers are a method of operating system virtualization that allow us to run an application and its dependencies in isolation within our actual operating system on our machine (be it a laptop, desktop, or some remote hosted server). Docker is one of container platform tools that we can use to build and manage containers. 
+Lastly, Docker Compose is a tool for defining and running multi-container Docker applications.&lt;/p&gt;
+
+&lt;p&gt;You probably now have more questions than answers after reading the paragraph above. That is fine. In fact, that is great. If you are curious about container technology, you can read more about it in &lt;a href=&quot;https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisite&quot;&gt;Prerequisite&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Docker on Your Machine&lt;/p&gt;
+
+    &lt;p&gt;Since you are likely have different machines and operating systems (MacOS, Linux, Windows), I would rather you take a look at &lt;a href=&quot;https://docs.docker.com/install/&quot;&gt;Docker official documentation&lt;/a&gt; and try to install it by following the guideline there on your own.s&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create Dockerfile&lt;/p&gt;
+
+    &lt;p&gt;In your working directory, create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and fill it with:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  FROM ruby:2.5
+  RUN apt-get update -qq &amp;amp;&amp;amp; apt-get install -y build-essential libpq-dev nodejs
+  RUN mkdir /bncc
+  WORKDIR /bncc
+  COPY Gemfile /bncc/Gemfile
+  COPY Gemfile.lock /bncc/Gemfile.lock
+  RUN bundle install
+  COPY . /bncc
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Just note that you can use replace &lt;code class=&quot;highlighter-rouge&quot;&gt;bncc&lt;/code&gt; with any directory name that you want.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create Initial Gemfile&lt;/p&gt;
+
+    &lt;p&gt;Now, create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and fill it with:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  source 'https://rubygems.org'
+  gem 'rails', '5.0.2'
+  gem 'public_suffix', '~&amp;gt; 3.0.2'
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;This will install required gems specific to our workshop requirements (Rails version 5.0.2).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create Gemfile.lock&lt;/p&gt;
+
+    &lt;p&gt;Create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; and leave it empty for the time being.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yaml&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;Create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yaml&lt;/code&gt; and fill it with:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  version: '3'
+  services:
+    db:
+      image: postgres
+      volumes:
+        - ./tmp/db:/var/lib/postgresql/data
+    web:
+      build: .
+      command: bundle exec rails s -p 3000 -b '0.0.0.0'
+      volumes:
+        - .:/bncc
+      ports:
+        - &quot;3000:3000&quot;
+      depends_on:
+        - db
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Don’t forget to replace &lt;code class=&quot;highlighter-rouge&quot;&gt;bncc&lt;/code&gt; with the name of directory that you use in Step 1.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Build The Project&lt;/p&gt;
+
+    &lt;p&gt;Run this command:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker-compose run web rails new . --force --database=postgresql
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;strong&gt;ONLY FOR LINUX USERS:&lt;/strong&gt; If you run the previous command in Linux, there is a good chance that your newly created files are created with &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; account by Docker. You need to change them to regular files by running the following command:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo chown -R $USER:$USER .
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Now this part is for everyone again, run the following command:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker-compose build
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;It may take some time as Docker needs to download and setup a lot of things for your development environment.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Modify Database Configuration&lt;/p&gt;
+
+    &lt;p&gt;Next, we need to change our &lt;code class=&quot;highlighter-rouge&quot;&gt;config/database.yml&lt;/code&gt; file. Make sure your database configuration file has the following lines:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  default: &amp;amp;default
+    adapter: postgresql
+    encoding: unicode
+    host: db
+    username: postgres
+    password:
+    pool: 5
+
+  development:
+    &amp;lt;&amp;lt;: *default
+    database: bncc_development
+
+  test:
+    &amp;lt;&amp;lt;: *default
+    database: bncc_test
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Boot The App&lt;/p&gt;
+
+    &lt;p&gt;Once the previous command is finished, you can boot your app with:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Afterward, we need to create the database. &lt;strong&gt;Do the following command in the same folder but from a different terminal&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker-compose run web rake db:create
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Now you should be able to see the Rails welcome page when you open &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt; from your browser.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find Your Container&lt;/p&gt;
+
+    &lt;p&gt;Now that you have Docker container up and running, you can get inside your container. First you need to know the name of your container. Find out with:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker ps
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;The result should look something like this (you might need to scroll to the right):&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+  0e1bb4260f52        bncc_web            &quot;bundle exec rails s…&quot;   14 seconds ago      Up 13 seconds       0.0.0.0:3000-&amp;gt;3000/tcp   bncc_web_1
+  3bc7089f6ccd        postgres            &quot;docker-entrypoint.s…&quot;   8 minutes ago       Up 14 seconds       5432/tcp                 bncc_db_1
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;In this case, the name of the container that we want to enter is &lt;code class=&quot;highlighter-rouge&quot;&gt;bncc_web_1&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter The Container&lt;/p&gt;
+
+    &lt;p&gt;Run the following command:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker exec -it bncc_web_1 /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Don’t forget to replace &lt;code class=&quot;highlighter-rouge&quot;&gt;bncc_web_1&lt;/code&gt; with the actual name that you see as the result of your &lt;code class=&quot;highlighter-rouge&quot;&gt;docker ps&lt;/code&gt; command.&lt;/p&gt;
+
+    &lt;p&gt;Now you can make changes to your Rails project from your host operating system while run terminal commands in your Docker &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin/bash&lt;/code&gt; environment.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stop and Start&lt;/p&gt;
+
+    &lt;p&gt;To stop your app, run this command &lt;strong&gt;in a different terminal from the one that runs your &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker-compose down
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;To start it again, you might have guessed it right by now:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Iqbal Farabi</name></author><category term="Container" /><category term="Docker" /><category term="Rails" /><category term="Ruby" /><summary type="html">Hi folks! This guide is mostly written for participatns of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.</summary></entry><entry><title type="html">Yang Fana adalah Waktu, Pragmatisme Abadi</title><link href="http://localhost:4000/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi/" rel="alternate" type="text/html" title="Yang Fana adalah Waktu, Pragmatisme Abadi" /><published>2018-07-08T00:00:00+07:00</published><updated>2018-07-08T00:00:00+07:00</updated><id>http://localhost:4000/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi</id><content type="html" xml:base="http://localhost:4000/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi/">&lt;p&gt;Sudah sekitar tujuh bulan terakhir saya &lt;em&gt;banting setir&lt;/em&gt;. Setelah delapan tahun lebih menyebut diri sendiri sebagai seorang &lt;em&gt;Ruby programmer&lt;/em&gt;, pada awal Januari tahun ini saya beralih menjadi seorang &lt;em&gt;system engineer&lt;/em&gt;. Salah satu dampak utama dari alih profesi ini, saya harus belajar banyak hal baru. Bagaimana tidak, ketika pertama kali mendapat &lt;em&gt;brief&lt;/em&gt; tentang peran baru saya ini, barangkali sekitar 80% teknologi yang diucapkan pada &lt;em&gt;brief&lt;/em&gt; tersebut belum pernah saya gunakan secara profesional.&lt;/p&gt;
 
 &lt;p&gt;Tiap orang tentu punya cara yang berbeda dalam mempelajari sesuatu. Bagi saya, cara yang sejauh ini terbukti efektif buat diri sendiri adalah dengan membaca beberapa buku tentang topik yang sedang saya pelajari. Untuk mempelajari tentang Kubernetes, misalnya, saya membaca dua judul buku, “Kubernetes: Up and Running” dan “Kubernetes in Action”. Belajar dari beberapa buku memberi saya perspektif yang lebih beragam mengenai satu topik. Konsep semacam &lt;em&gt;namespace&lt;/em&gt; pada &lt;em&gt;container&lt;/em&gt;, misal yang lain, terasa lebih mudah dan lebih komprehensif untuk dipahami ketika saya mempelajarinya dari beberapa sumber.&lt;/p&gt;
 

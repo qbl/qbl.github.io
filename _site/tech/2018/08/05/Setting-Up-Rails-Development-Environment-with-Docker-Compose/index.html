@@ -85,7 +85,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Ruby, Engineering" />
+  <meta name="keywords" content="Container,Docker,Rails,Ruby," />
 
 
 
@@ -113,17 +113,17 @@
 
 
 
-<meta name="description" content="Building...">
-<meta name="keywords" content="Ruby, Engineering">
-<meta property="og:type" content="website">
-<meta property="og:title" content="QBLFRB">
-<meta property="og:url" content="http://localhost:4000/about/">
+<meta name="description" content="Hi folks! This guide is mostly written for participatns of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.">
+<meta name="keywords" content="Container, Docker, Rails, Ruby">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setting Up Rails Development Environment with Docker Compose">
+<meta property="og:url" content="http://localhost:4000/tech/2018/08/05/Setting-Up-Rails-Development-Environment-with-Docker-Compose/">
 <meta property="og:site_name" content="QBLFRB">
-<meta property="og:description" content="Building...">
+<meta property="og:description" content="Hi folks! This guide is mostly written for participatns of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QBLFRB">
-<meta name="twitter:description" content="Building...">
+<meta name="twitter:title" content="Setting Up Rails Development Environment with Docker Compose">
+<meta name="twitter:description" content="Hi folks! This guide is mostly written for participatns of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -158,7 +158,7 @@
 <link href="/assets/css/syntax.css" rel="stylesheet" >
 
 
-  <title>              About | QBLFRB      </title>
+  <title>Setting Up Rails Development Environment with Docker Compose | QBLFRB</title>
   
 
 
@@ -327,25 +327,10 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+
 <div id="posts" class="posts-expand">
   
-    <header class="post-header">
-
-	<h1 class="post-title" itemprop="name headline">
-    
-      About
-    
-  </h1>
-
-
-
-</header>
-
   
-  
-  
-    
-    
 
   
 
@@ -353,8 +338,8 @@
   
   
 
-  <article class="post post-type-about " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/about/">
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/tech/2018/08/05/Setting-Up-Rails-Development-Environment-with-Docker-Compose/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Iqbal Farabi">
@@ -374,14 +359,57 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            
+            Setting Up Rails Development Environment with Docker Compose
           
         </h1>
         
 
         <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-05T00:00:00+07:00">
+                2018-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Tech" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
+          
+            
           
 
           
@@ -405,7 +433,210 @@
       
 
       
-        <p>Building…</p>
+        <p>Hi folks! This guide is mostly written for participatns of Go-Jek x BNCC bootcamp. But anyone who wishes to know how to setup their Rails development environemnt with Docker Compose is welcome as well. Just note that some examples here are specific to the sources I use for the bootcamp.</p>
+
+<p>Since this guide is aimed at students who might be not familiar yet with containers in general, let me explain in a brief what containers are. Containers are a method of operating system virtualization that allow us to run an application and its dependencies in isolation within our actual operating system on our machine (be it a laptop, desktop, or some remote hosted server). Docker is one of container platform tools that we can use to build and manage containers. 
+Lastly, Docker Compose is a tool for defining and running multi-container Docker applications.</p>
+
+<p>You probably now have more questions than answers after reading the paragraph above. That is fine. In fact, that is great. If you are curious about container technology, you can read more about it in <a href="https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b">this post</a>.</p>
+
+<h2 id="prerequisite">Prerequisite</h2>
+
+<ol>
+  <li>
+    <p>Install Docker on Your Machine</p>
+
+    <p>Since you are likely have different machines and operating systems (MacOS, Linux, Windows), I would rather you take a look at <a href="https://docs.docker.com/install/">Docker official documentation</a> and try to install it by following the guideline there on your own.s</p>
+  </li>
+</ol>
+
+<h2 id="setup">Setup</h2>
+
+<ol>
+  <li>
+    <p>Create Dockerfile</p>
+
+    <p>In your working directory, create a file named <code class="highlighter-rouge">Dockerfile</code> and fill it with:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  FROM ruby:2.5
+  RUN apt-get update -qq &amp;&amp; apt-get install -y build-essential libpq-dev nodejs
+  RUN mkdir /bncc
+  WORKDIR /bncc
+  COPY Gemfile /bncc/Gemfile
+  COPY Gemfile.lock /bncc/Gemfile.lock
+  RUN bundle install
+  COPY . /bncc
+</code></pre>
+    </div>
+
+    <p>Just note that you can use replace <code class="highlighter-rouge">bncc</code> with any directory name that you want.</p>
+  </li>
+  <li>
+    <p>Create Initial Gemfile</p>
+
+    <p>Now, create a file named <code class="highlighter-rouge">Gemfile</code> and fill it with:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  source 'https://rubygems.org'
+  gem 'rails', '5.0.2'
+  gem 'public_suffix', '~&gt; 3.0.2'
+</code></pre>
+    </div>
+
+    <p>This will install required gems specific to our workshop requirements (Rails version 5.0.2).</p>
+  </li>
+  <li>
+    <p>Create Gemfile.lock</p>
+
+    <p>Create a file named <code class="highlighter-rouge">Gemfile.lock</code> and leave it empty for the time being.</p>
+  </li>
+  <li>
+    <p>Create <code class="highlighter-rouge">docker-compose.yaml</code></p>
+
+    <p>Create a file named <code class="highlighter-rouge">docker-compose.yaml</code> and fill it with:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  version: '3'
+  services:
+    db:
+      image: postgres
+      volumes:
+        - ./tmp/db:/var/lib/postgresql/data
+    web:
+      build: .
+      command: bundle exec rails s -p 3000 -b '0.0.0.0'
+      volumes:
+        - .:/bncc
+      ports:
+        - "3000:3000"
+      depends_on:
+        - db
+</code></pre>
+    </div>
+
+    <p>Don’t forget to replace <code class="highlighter-rouge">bncc</code> with the name of directory that you use in Step 1.</p>
+  </li>
+  <li>
+    <p>Build The Project</p>
+
+    <p>Run this command:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker-compose run web rails new . --force --database=postgresql
+</code></pre>
+    </div>
+
+    <p><strong>ONLY FOR LINUX USERS:</strong> If you run the previous command in Linux, there is a good chance that your newly created files are created with <code class="highlighter-rouge">root</code> account by Docker. You need to change them to regular files by running the following command:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  sudo chown -R $USER:$USER .
+</code></pre>
+    </div>
+
+    <p>Now this part is for everyone again, run the following command:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker-compose build
+</code></pre>
+    </div>
+
+    <p>It may take some time as Docker needs to download and setup a lot of things for your development environment.</p>
+  </li>
+  <li>
+    <p>Modify Database Configuration</p>
+
+    <p>Next, we need to change our <code class="highlighter-rouge">config/database.yml</code> file. Make sure your database configuration file has the following lines:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  default: &amp;default
+    adapter: postgresql
+    encoding: unicode
+    host: db
+    username: postgres
+    password:
+    pool: 5
+
+  development:
+    &lt;&lt;: *default
+    database: bncc_development
+
+  test:
+    &lt;&lt;: *default
+    database: bncc_test
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Boot The App</p>
+
+    <p>Once the previous command is finished, you can boot your app with:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker-compose up
+</code></pre>
+    </div>
+
+    <p>Afterward, we need to create the database. <strong>Do the following command in the same folder but from a different terminal</strong>:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker-compose run web rake db:create
+</code></pre>
+    </div>
+
+    <p>Now you should be able to see the Rails welcome page when you open <code class="highlighter-rouge">localhost:3000</code> from your browser.</p>
+  </li>
+</ol>
+
+<h2 id="usage">Usage</h2>
+
+<ol>
+  <li>
+    <p>Find Your Container</p>
+
+    <p>Now that you have Docker container up and running, you can get inside your container. First you need to know the name of your container. Find out with:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker ps
+</code></pre>
+    </div>
+
+    <p>The result should look something like this (you might need to scroll to the right):</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+  0e1bb4260f52        bncc_web            "bundle exec rails s…"   14 seconds ago      Up 13 seconds       0.0.0.0:3000-&gt;3000/tcp   bncc_web_1
+  3bc7089f6ccd        postgres            "docker-entrypoint.s…"   8 minutes ago       Up 14 seconds       5432/tcp                 bncc_db_1
+</code></pre>
+    </div>
+
+    <p>In this case, the name of the container that we want to enter is <code class="highlighter-rouge">bncc_web_1</code>.</p>
+  </li>
+  <li>
+    <p>Enter The Container</p>
+
+    <p>Run the following command:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker exec -it bncc_web_1 /bin/bash
+</code></pre>
+    </div>
+
+    <p>Don’t forget to replace <code class="highlighter-rouge">bncc_web_1</code> with the actual name that you see as the result of your <code class="highlighter-rouge">docker ps</code> command.</p>
+
+    <p>Now you can make changes to your Rails project from your host operating system while run terminal commands in your Docker <code class="highlighter-rouge">/bin/bash</code> environment.</p>
+  </li>
+  <li>
+    <p>Stop and Start</p>
+
+    <p>To stop your app, run this command <strong>in a different terminal from the one that runs your <code class="highlighter-rouge">docker-compose up</code></strong>:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker-compose down
+</code></pre>
+    </div>
+
+    <p>To start it again, you might have guessed it right by now:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  docker-compose up
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -426,6 +657,22 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/Container" rel="tag"># Container</a>
+          
+            
+            <a href="/tag/#/Docker" rel="tag"># Docker</a>
+          
+            
+            <a href="/tag/#/Rails" rel="tag"># Rails</a>
+          
+            
+            <a href="/tag/#/Ruby" rel="tag"># Ruby</a>
+          
+        </div>
+      
 
       
       
@@ -434,6 +681,22 @@
       
 
       
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/books/2018/07/08/yang-fana-adalah-waktu-pragmatisme-abadi/" rel="prev" title="Yang Fana adalah Waktu, Pragmatisme Abadi">
+                Yang Fana adalah Waktu, Pragmatisme Abadi <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
       
 
@@ -441,7 +704,9 @@
     </footer>
   </article>
 
-  
+  <div class="post-spread">
+    
+  </div>
 </div>
 
 
@@ -450,6 +715,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -467,10 +736,27 @@
     <div class="sidebar-inner">
 
       
+        
+        
+        
+
+
+
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/assets/images/default_avatar.png"
@@ -541,6 +827,31 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#prerequisite"> <span class="nav-number">1</span> <span class="nav-text">Prerequisite</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#setup"> <span class="nav-number">2</span> <span class="nav-text">Setup</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#usage"> <span class="nav-number">3</span> <span class="nav-text">Usage</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
