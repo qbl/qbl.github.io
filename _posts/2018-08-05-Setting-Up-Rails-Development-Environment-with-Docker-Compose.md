@@ -22,7 +22,7 @@ You probably now have more questions than answers after reading the paragraph ab
 
 1. Install Docker on Your Machine
 
-     Since you are likely have different machines and operating systems (MacOS, Linux, Windows), I would rather you take a look at [Docker official documentation](https://docs.docker.com/install/) and try to install it by following the guideline there on your own.s
+     Since you are likely have different machines and operating systems (MacOS, Linux, Windows), I would rather you take a look at [Docker official documentation](https://docs.docker.com/install/) and try to install it by following the guideline there on your own.
 
 ## Setup
 
