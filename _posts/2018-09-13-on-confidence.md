@@ -8,7 +8,7 @@ tags:
   - Growth
 ---
 
-Several days ago, I had a wonderful opportunity to be one of panelists in a Go-Talk session. The session was titled "The Power of Grit" and I was supposed to share my experience on developing grit. However, in this post I will not discuss about grit. Instead, I want to discuss about confidence.
+Several days ago, I had a wonderful opportunity to be one of panelists in a Go-Talk session. The session was titled "The Power of Grit" and I was supposed to share my experience on developing grit. However, in this post I will not discuss about grit, I will discuss it in another post. Instead, I want to discuss about confidence.
 
 But why? Well, because I think I made a mistake on this point when I answered one of the questions from a colleague in the audience. To be exact, the question was something along this line, "are you familiar with a term called 'the imposter syndrome'? For me personally, working with these bright people around me sometimes make me feel like I am not good enough. Do you have any tips to be confidence?"
 
