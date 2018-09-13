@@ -20,7 +20,7 @@ To put in a better context, what do I usually do when I have to work on a proble
 
 Sometimes I even lower the expectation by saying things such as, "I am total idiot on this". I realize now that it might not be the correct way to behave. So far I am just lucky to have partners that don't lose all their confidence on me the moment I said such things.
 
-Then, what is the better answer? Is confidence good? Or is it bad? Should I be confidence in my ability to solve a problem even though I don't have all the answers upfront? Or should I always lower the expectations of everyone around me? Where is the border between being confident and being smug? Where is the line between humility and inferiority?
+Then, what is the better answer? Is confidence good? Or is it bad? Should I be confident in my ability to solve a problem even though I don't have all the answers upfront? Or should I always lower the expectations of everyone around me? Where is the border between being confident and being smug? Where is the line between humility and inferiority?
 
 Frankly speaking, I don't have a definite answer to the questions above even now. But I do think the following excerpt from Paul Graham's essay titled "The Dream Language" is a good first step towards answering those questions:
 
